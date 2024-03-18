@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/style.production.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Kode+Mono:wght@400..700&family=Playfair+Display:ital,wght@0,500;1,500&family=Protest+Revolution&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD-portfolio_Profile</title>
+</head>
+
+<body>
+    <header class="profile_head">
+        <!-- <section class="header-section"> -->
+        <img src="img/l.png" class="profile_logo" alt="logo">
+        <nav>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation"><a href="./index.html" role="menuitem" class="navigation-list-item">Home</a>
+                </li>
+                <li role="presentation"><a href="./about.html" role="menuitem" class="navigation-list-item">About</a>
+                </li>
+                <li role="presentation"><a href="./work.html" role="menuitem" class="navigation-list-item">Work</a>
+                </li>
+                <li role="presentation"><a href="./contact.html" role="menuitem"
+                        class="navigation-list-item">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- </section> -->
+    </header>
+    <main>
+        <center><button type="button" class="button-page">Contact</button></center>
+        <section class="contact-section">
+
+            <div class="contact-div">
+                <h1 class="profile_name">User Contact form</h1>
+                <form action="" method="post" id="Contact-form">
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required="required">
+                    </p>
+                    <p>
+                        <label for="tel">Phone no:</label>
+                        <input type="tel" id="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required="required">
+                    </p>
+                    <p>
+                        <label for="Message">Message:</label>
+                        <textarea maxlength="240" required="required">text...</textarea>
+                    </p>
+                    <p>
+                        <label for="textarea"></label>
+                        <input id="textarea" type="submit" value="send-message">
+                        <input type="reset" value="reset">
+                    </p>
+                </form>
+            </div>
+            <div class="contact-div">
+                <h1 class="profile_name">My contact details:</h1>
+
+                <p>
+                    CareerFoundry GmbH<br>
+                    Lohmühlenstraße 65 <br>
+                    12435 Berlin<br>
+                    Deutschland</p>
+                <a href="tel:+493048492016">
+                    <p>Tel: +49 30 4849 2016</p>
+                </a>
+                <a href="mailto:office@careerfoundry.com">
+                    <p>office@careerfoundry.com</p>
+                </a>
+                <a href="skype:hello.careerfoundary">
+                    <p>Skype: call-to-action</p>
+                </a>
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer_page">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://twitter.com/">
+
+                <img src="img/Logo_of_Twitter.svg" height="30" width="30" alt="logo">
+            </a>
+            <a href="https://github.com/">
+
+                <img src="img/github.svg" height="30" width="30" alt="logo">
+            </a>
+            <a href="https://www.linkedin.com/">
+
+                <img src="img/LinkedIn_icon.svg" height="30" width="30" alt="logo">
+            </a>
+        </div>
+    </footer>
+    <script src="./tota11y.min.js"></script>
+</body>
+
+</html>
