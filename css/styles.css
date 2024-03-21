@@ -495,6 +495,10 @@ svg * {
     animation: gradient 5s ease infinite;
     padding: 20px;
     border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -620,4 +624,13 @@ svg * {
     animation: moveRight 5s linear infinite;
     animation-direction: alternate;
     transition-duration: 5s;
+}
+
+.register-page {
+    text-align: center;
+    justify-items: center;
+}
+
+#contact-form {
+    position: relative;
 }
