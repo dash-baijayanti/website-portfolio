@@ -94,36 +94,39 @@
 }
 
 .profile_name {
-  background:(
-    linear,
-    from(red),
-    color-stop(orange),
-    color-stop(rgb(142, 142, 25)),
-    color-stop(green),
-    color-stop(blue),
-    color-stop(purple),
-    to(pink)
-  );
-  background: -o-linear-gradient(
-    left,
-    red,
-    orange,
-    rgb(142, 142, 25),
-    green,
-    blue,
-    purple,
-    pink
-  );
-  background: linear-gradient(
-    to Right,
-    red,
-    orange,
-    rgb(142, 142, 25),
-    green,
-    blue,
-    purple,
-    pink
-  );
+  background:
+    -webkit-background(
+      linear,
+      from(red),
+      color-stop(orange),
+      color-stop(rgb(142, 142, 25)),
+      color-stop(green),
+      color-stop(blue),
+      color-stop(purple),
+      to(pink)
+    );
+  background:
+    -o-linear-gradient(
+      left,
+      red,
+      orange,
+      rgb(142, 142, 25),
+      green,
+      blue,
+      purple,
+      pink
+    );
+  background:
+    linear-gradient(
+      to Right,
+      red,
+      orange,
+      rgb(142, 142, 25),
+      green,
+      blue,
+      purple,
+      pink
+    );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
