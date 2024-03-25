@@ -1,5 +1,6 @@
 $shadow-color: rgb(228, 114, 214);
 $font-color:rgb(72, 3, 70);
+
 @mixin profile-div() {
   background-color: white;
   height: 200px;
@@ -7,19 +8,24 @@ $font-color:rgb(72, 3, 70);
   display: flex;
   padding: 25px;
 }
+
 @mixin logo() {
   flex: 0 1 200px;
+
   min {
     height: 100px;
     width: 150px;
   }
+
   boxsizing: border-box;
   border: 5px rgb(242, 241, 239);
   box-shadow: 12px 12px 18px $shadow-color;
   border-radius: 30px;
   transition: width 2s, height 2s, transform 2s;
 }
+
 .profile_head {
+
   @include profile-div();
   &--last-child {
     flex: 1;
