@@ -1,0 +1,10 @@
+I have checked my project code using "W3C validator" website. And it shows 0 error. 
+And i have been used the "HTML Hint" extensions of vs code throughout the project coding. That's why i could not face any big problem of errors. Because it helps me in every step from staring to ending.
+Under the Problem tag, some errors occurred. Like list of issues i found,
+*Expected double colon.
+*Expected indentation of 2 spaces/4 spaces.
+*Expected empty line before comments.
+Now it's error free.
+During my cross browser testing, i faced a single problem in handy version. Just like the button that says “Register “. After changing in transition and transform property, i was successful in fixing it.
+
+
