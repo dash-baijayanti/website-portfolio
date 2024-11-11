@@ -1026,5 +1026,10 @@ svg * {
    border-top-left-radius: 5em;
   -webkit-border-top-left-radius: 5em;
 }
+.modal-screenshots{
+  height: 100px;
+  width:100px;
+
+}
 
    

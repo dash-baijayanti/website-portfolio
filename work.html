@@ -51,7 +51,9 @@
             data-role="Build the frontend interface displaying a list of Pokémon..."
             data-learnings="Load data from an external source (API), Creating and using Modals, Design a dynamic site, Using Bootstrap for styling"
             data-technologies="JavaScript, jQuery, Polyfill, Bootstrap, CSS, HTML, Prettier"
-            data-repo="https://github.com/dash-baijayanti/simple-js-app">Project Info</button>
+            data-repo="https://github.com/dash-baijayanti/simple-js-app"
+            data-screenshots="screen/pok/Screenshot 2024-11-11 225640.png, screen/pok/Screenshot 2024-11-11 225708.png">
+            Project Info</button>
         </div>
 
         <!-- 2 -->
@@ -68,7 +70,9 @@
             data-role="Developed a movie application with user authentication, profile management, and favorite lists."
             data-learnings="Implementing user authentication, managing a RESTful API, using React for UI"
             data-technologies="React, Node.js, Express, MongoDB, CSS, HTML"
-            data-repo="https://github.com/dash-baijayanti/myFlix-client">Project Info</button>
+            data-repo="https://github.com/dash-baijayanti/myFlix-client" data-screenshots="screen/flix/Screenshot 2024-11-11 214759.png, screen/flix/Screenshot 2024-11-11 214901.png,
+            screen/flix/Screenshot 2024-11-11 214934.png,screen/flix/Screenshot 2024-11-11 215026.png">
+            Project Info</button>
         </div>
 
         <!-- 3 -->
@@ -101,7 +105,10 @@
             CSS,
             HTML,
             Prettier,
-            ESLint" data-repo="https://github.com/dash-baijayanti/meet">Project Info</button>
+            ESLint" data-repo="https://github.com/dash-baijayanti/meet"
+            data-screenshots="screen/meet/Screenshot 2024-11-11 215111.png, screen/meet/Screenshot 2024-11-11 215159.png,
+            screen/meet/Screenshot 2024-11-11 215242.png,screen/meet/Screenshot 2024-11-11 215316.png,screen/meet/Screenshot 2024-11-11 215357.png">
+            Project Info</button>
         </div>
         </div>
       </section>
@@ -122,6 +129,8 @@
             <p id="modal-learnings">Learnings</p>
             <h3 class="profile_name">Technologies Used</h3>
             <p id="modal-technologies">Technologies Used</p>
+            <h3 class="profile_name">Screenshots</h3>
+            <div id="modal-screenshots"></div>
           </div>
           <div class="modal-footer">
             <a id="modal-repo-link" href="#" target="_blank">Repository</a>
@@ -144,6 +153,7 @@
       const modalTechnologies = document.getElementById("modal-technologies");
       const modalRepoLink = document.getElementById("modal-repo-link");
       const closeModal = document.getElementsByClassName("close")[0];
+      const modalScreenshots = document.getElementById('modal-screenshots');
 
       // Open modal with content based on clicked button
       document.querySelectorAll('.modal-btn').forEach(button => {
@@ -157,8 +167,22 @@
           modalTechnologies.textContent = button.getAttribute('data-technologies');
           modalRepoLink.href = button.getAttribute('data-repo');
 
-          // Show the modal
-          modal.style.display = "flex";
+
+          // Clear existing screenshots
+          modalScreenshots.innerHTML = '';
+
+          // Get and display screenshots
+          const screenshots = button.getAttribute('data-screenshots').split(',');
+          screenshots.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src.trim();
+            img.style.width = '100px';  // Adjust image width
+            img.style.margin = '5px';
+            modalScreenshots.appendChild(img);
+
+            // Show the modal
+            modal.style.display = "flex";
+          });
         };
       });
 
