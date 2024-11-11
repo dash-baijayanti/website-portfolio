@@ -21,7 +21,7 @@
 }
 
 .profile_head {
-  background-color: white;
+  /* background-color: white; */
   height: 200px;
   width: 100%;
   display: -webkit-box;
@@ -181,6 +181,7 @@
   max-width: 100%;
   margin-right: 40px;
   border-radius: 50%;
+  
 }
 
 .profile {
@@ -199,7 +200,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  border: 2px solid rgb(115, 7, 115);
+  border: 2px solid rgb(128, 200, 241);
   -webkit-box-shadow: 2px 2px 10px rgb(246, 185, 239);
   box-shadow: 2px 2px 10px rgb(246, 185, 239);
   font-family: "Playfair Display", serif;
@@ -214,8 +215,8 @@
 }
 
 .button-page:hover {
-  background-color: rgb(152, 63, 124);
-  color: white;
+  background-color: rgb(128, 200, 241);
+  color: rgb(37, 33, 33);
   cursor: pointer;
   opacity: 0.6;
   width: 300px;
@@ -247,9 +248,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  border: 2px solid rgb(115, 7, 115);
-  -webkit-box-shadow: 2px 2px 10px rgb(246, 185, 239);
-  box-shadow: 2px 2px 10px rgb(246, 185, 239);
+  border: 2px solid rgb(114, 182, 255);
+  -webkit-box-shadow: 2px 2px 10px rgb(128, 200, 241);
+  box-shadow: 2px 2px 10px rgb(128, 200, 241);
   font-family: "Playfair Display", serif;
   font-weight: 500;
   -webkit-text-decoration: solid;
@@ -265,8 +266,8 @@
 
 .button:hover,
 .button:focus {
-  background-color: rgb(152, 63, 124);
-  color: white;
+  background-color:rgb(128, 200, 241);
+  color: rgb(73, 70, 70);
   cursor: pointer;
   opacity: 0.6;
   text-align: center;
@@ -337,11 +338,11 @@
 
 .grid-items {
   font-family: "Playfair Display", serif;
-  -webkit-box-shadow: 12px 12px 18px rgb(246, 185, 239);
-  box-shadow: 12px 12px 18px rgb(246, 185, 239);
-  background-color: white;
+  -webkit-box-shadow: 12px 12px 18px rgb(128, 200, 241);
+  box-shadow: 12px 12px 18px rgb(128, 200, 241);
+  /* background-color: white; */
   color: rgb(49, 3, 47);
-  font-weight: 500;
+  font-weight: 500; 
   text-align: center;
   width: auto;
   min-height: auto;
@@ -372,8 +373,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 5px;
-  -webkit-box-shadow: 12px 12px 18px rgb(246, 185, 239);
-  box-shadow: 12px 12px 18px rgb(246, 185, 239);
+  -webkit-box-shadow: 12px 12px 18px  rgb(128, 200, 241);
+  box-shadow: 12px 12px 18px rgb(128, 200, 241);
   margin-left: 25px;
   margin-right: 25px;
   font-family: "Playfair Display", serif;
@@ -939,12 +940,12 @@ svg * {
       cursor: pointer;
     }
     .modal-footer{
-      background-color: #faa0f2;
+      background-color:rgb(156, 214, 247);
       text-align: center;
       padding: 10px;
     }
     .modal-header{
-      background-color: #faa0f2;
+      background-color:  rgb(156, 214, 247);
       text-align: center;
       padding: 10px;
     }
@@ -989,3 +990,41 @@ svg * {
     .carousel-control.next {
       right: 10px;
     }
+    body
+{
+  width: 95%; 
+  height:100%;
+  margin:0em 5%;
+  background-color:#8ec1da;
+  background-image: url("http://vollnixx.files.wordpress.com/2013/12/clouds_real.jpg");
+  background-position: center bottom;
+  animation: animatedBackground 30s linear infinite;
+  /* Safari and Chrome: */
+  -webkit-animation: animatedBackground 30s linear infinite;
+}
+@keyframes animatedBackground 
+{
+  from { background-position: 0 100%; }
+  to { background-position: 100% 100%; }
+}
+@-webkit-keyframes  animatedBackground 
+{
+  from { background-position: 0 100%; }
+  to { background-position: 100% 100%; }
+}
+#content
+{
+  position:fixed;
+  top:5em;
+  height:1em;
+  width:19em;
+  /* background-color:rgba(1,1,1,0.5); */
+  /* color:white; */
+  padding:2em;
+  border-bottom-right-radius: 5em;
+  -webkit-border-bottom-right-radius: 5em;
+   border-top-left-radius: 5em;
+  -webkit-border-top-left-radius: 5em;
+}
+
+   
