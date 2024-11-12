@@ -3,56 +3,49 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/style.production.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD-portfolio_Profile</title>
+    <style>
+      input:invalid {
+        border: 2px solid rgb(236, 38, 38);
+      }
+
+      input:invalid+.error-message {
+        display: block;
+        color: rgb(245, 56, 56);
+      }
+
+      .error-message {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
     <header class="profile_head">
-      <!-- <section class="header-section"> -->
-      <img src="img/l.png" class="profile_logo" alt="logo">
+      <img src="img/l-vmake.png" class="profile_logo" alt="logo">
       <nav>
         <ul role="menubar" class="navigation-list">
-          <li role="presentation"><a href="./index.html" role="menuitem" class="navigation-list-item">Home</a>
-          </li>
-          <li role="presentation"><a href="./about.html" role="menuitem" class="navigation-list-item">About</a>
-          </li>
-          <li role="presentation"><a href="./work.html" role="menuitem" class="navigation-list-item">Work</a>
-          </li>
+          <li role="presentation"><a href="./index.html" role="menuitem" class="navigation-list-item">Home</a></li>
+          <li role="presentation"><a href="./about.html" role="menuitem" class="navigation-list-item">About</a></li>
+          <li role="presentation"><a href="./work.html" role="menuitem" class="navigation-list-item">Work</a></li>
           <li role="presentation"><a href="./contact.html" role="menuitem" class="navigation-list-item">Contact</a></li>
         </ul>
       </nav>
-      <!-- </section> -->
     </header>
+
     <main>
       <button type="button" class="button-page">Contact</button>
       <section class="contact-section">
-        <style>
-          input:invalid {
-            border: 2px solid rgb(236, 38, 38);
-          }
-
-          input:invalid+.error-message {
-            display: block;
-            color: rgb(245, 56, 56);
-          }
-
-          .error-message {
-            display: none;
-          }
-        </style>
-
         <div class="contact-div">
-          <h1 class="profile_name">User Contact form</h1>
-          <form action="confirm.html" method="get" id="Contact-form">
+          <h1 class="profile_name">User Contact Form</h1>
+          <form id="contactForm" action="#" method="post">
             <p>
               <label>Email:</label>
               <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -61,30 +54,70 @@
             </p>
             <p>
               <label>Phone no:</label>
-              <input type="tel" id="phone" required title="Please enter a 10-digit phone number">
+              <input type="tel" id="phone" name="phone" required pattern="^\d{10}$"
+                title="Please enter a 10-digit phone number">
               <span class="error-message" id="phoneError">Please enter a valid 10-digit phone number (e.g.,
-                123-456-7890).</span>
+                1234567890).</span>
             </p>
             <p>
               <label>Message:</label>
-              <textarea maxlength="240" required="required">text...</textarea>
+              <textarea maxlength="240" required>text...</textarea>
             </p>
             <p>
-              <label></label>
-              <input href="./confirm.html" type="submit" value="send-message" id="textarea"
-                onclick="window.location.href='./confirm.html';">
-              <input type="reset" value="reset">
+              <input type="submit" value="Send Message" id="submitBtn">
+              <input type="reset" value="Reset">
             </p>
           </form>
-        </div>
-        <div class="contact-div">
-          <h1 class="profile_name">My contact details:</h1>
 
+          <script>
+            // Get form elements
+            const form = document.getElementById("contactForm");
+            const emailField = document.getElementById("email");
+            const phoneField = document.getElementById("phone");
+
+            // Error message elements
+            const emailError = document.getElementById("emailError");
+            const phoneError = document.getElementById("phoneError");
+
+            // Validation function
+            form.addEventListener("submit", function (event) {
+              let isValid = true;
+
+              // Email validation
+              if (!emailField.validity.valid) {
+                emailError.textContent = "Please enter a valid email address.";
+                isValid = false;
+              } else {
+                emailError.textContent = "";
+              }
+
+              // Phone number validation: Only digits, required, length check
+              if (!phoneField.validity.valid) {
+                phoneError.textContent = "Please enter a valid 10-digit phone number.";
+                isValid = false;
+              } else {
+                phoneError.textContent = "";
+              }
+
+              // Redirect if valid, else prevent form submission
+              if (!isValid) {
+                event.preventDefault();
+              } else {
+                event.preventDefault(); // Prevent default submission
+                window.location.href = "./confirm.html"; // Redirect to confirmation page
+              }
+            });
+          </script>
+        </div>
+
+        <div class="contact-div">
+          <h1 class="profile_name">My Contact Details:</h1>
           <p>
             CareerFoundry GmbH<br>
             Lohmühlenstraße 65 <br>
             12435 Berlin<br>
-            Deutschland</p>
+            Deutschland
+          </p>
           <a href="tel:+493048492016">
             <p>Tel: +49 30 4849 2016</p>
           </a>
@@ -94,29 +127,18 @@
           <a href="skype:hello.careerfoundary">
             <p>Skype: call-to-action</p>
           </a>
-
         </div>
-
       </section>
     </main>
+
     <footer class="footer_page">
       <p>Find me on</p>
       <div class="social-media">
-        <a href="https://twitter.com/">
-
-          <img src="img/Logo_of_Twitter.svg" height="30" width="30" alt="logo">
-        </a>
-        <a href="https://github.com/">
-
-          <img src="img/github.svg" height="30" width="30" alt="logo">
-        </a>
-        <a href="https://www.linkedin.com/">
-
-          <img src="img/LinkedIn_icon.svg" height="30" width="30" alt="logo">
-        </a>
+        <a href="https://twitter.com/"><img src="img/Logo_of_Twitter.svg" height="30" width="30" alt="Twitter"></a>
+        <a href="https://github.com/"><img src="img/github.svg" height="30" width="30" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/"><img src="img/LinkedIn_icon.svg" height="30" width="30" alt="LinkedIn"></a>
       </div>
     </footer>
-    <!-- <script src="./tota11y.min.js"></script> -->
   </body>
 
 </html>

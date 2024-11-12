@@ -36,7 +36,7 @@
         }
       </style>
 
-      <form action="confirm.html" method="get" id="registrationForm">
+      <form action="#" method="get" id="registrationForm">
         <p>
           <label>Name</label>
           <input type="text" id="username" name="username" required minlength="5" maxlength="15"
@@ -51,13 +51,15 @@
         </p>
         <p>
           <label>Phone no:</label>
-          <input type="tel" id="phone" placeholder="123-456-7890" required title="Please enter a 10-digit phone number">
+          <input type="tel" id="phone" name="phone" required pattern="^\d{10}$"
+            title="Please enter a 10-digit phone number">
           <span class="error-message" id="phoneError">Please enter a valid 10-digit phone number (e.g.,
-            123-456-7890).</span>
+            1234567890).</span>
         </p>
 
         <p>
-          <a href="./confirm.html" class="button">sign-in</a><br>
+          <input type="submit" value="Sign-In" id="submitBtn">
+          <input type="reset" value="Reset">
           <a href="./index.html" class="button">Go back</a>
           <!-- <label for="textarea"></label>
                   <input id="textarea" type="submit" value="sign-in">
@@ -67,35 +69,55 @@
       </form>
 
       <script>
-        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        // Get form elements
+        const form = document.getElementById("contactForm");
+        const nameField = document.getElementById("name");
+        const emailField = document.getElementById("email");
+        const phoneField = document.getElementById("phone");
+
+        // Error message elements
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const phoneError = document.getElementById("phoneError");
+
+        // Validation function
+        form.addEventListener("submit", function (event) {
           let isValid = true;
-
-          const email = document.getElementById("email");
-          const emailError = document.getElementById("emailError");
-          if (!email.checkValidity()) {
-            emailError.style.display = "block";
+          // Name validation: Only letters, required
+          const nameRegex = /^[A-Za-z\s]+$/;
+          if (!nameRegex.test(nameField.value)) {
+            nameError.textContent = "Please enter a valid name (letters only).";
             isValid = false;
           } else {
-            emailError.style.display = "none";
+            nameError.textContent = "";
           }
 
-          const phone = document.getElementById("phone");
-          const phoneError = document.getElementById("phoneError");
-          if (!phone.checkValidity()) {
-            phoneError.style.display = "block";
+          // Email validation
+          if (!emailField.validity.valid) {
+            emailError.textContent = "Please enter a valid email address.";
             isValid = false;
           } else {
-            phoneError.style.display = "none";
+            emailError.textContent = "";
           }
 
+          // Phone number validation: Only digits, required, length check
+          if (!phoneField.validity.valid) {
+            phoneError.textContent = "Please enter a valid 10-digit phone number.";
+            isValid = false;
+          } else {
+            phoneError.textContent = "";
+          }
+
+          // If validation passes, redirect to another page
           if (!isValid) {
-            event.preventDefault(); // Prevent form submission if validation fails
+            event.preventDefault();
           } else {
-            // Redirect to the next page
-            window.location.href = "./confirm.html";
+            event.preventDefault(); // Prevent default submission
+            window.location.href = "./confirm.html"; // Redirect to confirmation page
           }
         });
       </script>
+
     </div>
   </body>
 
