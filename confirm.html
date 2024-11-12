@@ -5,52 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Background</title>
+
     <style>
-      * {
+      body {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        background-color: #000;
       }
 
-      body,
-      html {
-        height: 100%;
-        background: linear-gradient(45deg, #5d3fd3, #ec5e86, #50c8a1, #ffdf48);
-        background-size: 400% 400%;
-        animation: auroraAnimation 12s ease infinite;
+      .text-container {
+        height: 100vh;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        font-family: Arial, sans-serif;
+        flex-direction: column;
+        text-align: center;
       }
 
-      @keyframes auroraAnimation {
-        0% {
-          background-position: 0% 50%;
+      .text-container h1 {
+        margin: 0;
+        font-size: 150px;
+        color: rgba(225, 225, 225, .01);
+        background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+        background-repeat: repeat;
+        background-clip: text;
+        animation: animate 15s ease-in-out infinite;
+        text-transform: uppercase;
+        font-weight: 900;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .text-container a {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      .text-container a:hover {
+        color: #ccc;
+      }
+
+      @keyframes animate {
+
+        0%,
+        100% {
+          background-position: left top;
+        }
+
+        25% {
+          background-position: right bottom;
         }
 
         50% {
-          background-position: 100% 50%;
+          background-position: left bottom;
         }
 
-        100% {
-          background-position: 0% 50%;
+        75% {
+          background-position: right top;
         }
-      }
-
-      .content {
-        text-align: center;
-        font-size: 2rem;
       }
     </style>
   </head>
 
   <body>
-    <div class="content">
-      <h1>Welcome to My Portfolio</h1><br>
-      <a href="./index.html">
-        Home Page</a>
+    <div class="text-container">
+      <h1>Welcome to My Portfolio</h1>
+      <a href="./index.html">Home Page</a>
     </div>
   </body>
 
