@@ -3,13 +3,11 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/style.production.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD-portfolio_Profile</title>
@@ -20,7 +18,6 @@
     <h1 class="profile_name">Get started any way you want</h1>
 
     <div class="register-div">
-
       <style>
         input:invalid {
           border: 2px solid rgb(245, 241, 241);
@@ -61,38 +58,25 @@
           <input type="submit" value="Sign-In" id="submitBtn">
           <input type="reset" value="Reset">
           <a href="./index.html" class="button">Go back</a>
-          <!-- <label for="textarea"></label>
-                  <input id="textarea" type="submit" value="sign-in">
-                  <input type="reset" value="reset"> -->
-
         </p>
       </form>
 
       <script>
         // Get form elements
-        const form = document.getElementById("contactForm");
-        const nameField = document.getElementById("name");
+        const form = document.getElementById("registrationForm");
+        const usernameField = document.getElementById("username");
         const emailField = document.getElementById("email");
         const phoneField = document.getElementById("phone");
 
         // Error message elements
-        const nameError = document.getElementById("nameError");
         const emailError = document.getElementById("emailError");
         const phoneError = document.getElementById("phoneError");
 
         // Validation function
         form.addEventListener("submit", function (event) {
           let isValid = true;
-          // Name validation: Only letters, required
-          const nameRegex = /^[A-Za-z\s]+$/;
-          if (!nameRegex.test(nameField.value)) {
-            nameError.textContent = "Please enter a valid name (letters only).";
-            isValid = false;
-          } else {
-            nameError.textContent = "";
-          }
 
-          // Email validation
+          // Email validation: HTML5 email pattern (built-in)
           if (!emailField.validity.valid) {
             emailError.textContent = "Please enter a valid email address.";
             isValid = false;
@@ -117,7 +101,6 @@
           }
         });
       </script>
-
     </div>
   </body>
 
