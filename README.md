@@ -58,7 +58,7 @@ Add more interactive features, such as project filters.
 Feel free to reach out if you're interested in collaborating or just want to connect!
 
 Email: [dash.baijayanti@gmail.com]
-LinkedIn: [[Your LinkedIn Profile](https://www.linkedin.com/in/baijayanti-dash/)]
-GitHub: [[Your GitHub Profile](https://github.com/dash-baijayanti)]
+LinkedIn: [https://www.linkedin.com/in/baijayanti-dash/]
+GitHub: [https://github.com/dash-baijayanti]
 
  
