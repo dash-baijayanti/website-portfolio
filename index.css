@@ -72,7 +72,7 @@ body {
     animation-duration: 300s;
   }
 }
-
+/* 
 @keyframes MOVE-BG {
   from {
     transform: translateY(0);
@@ -80,4 +80,4 @@ body {
   to {
     transform: translateY(70%);
   }
-}
+} */
