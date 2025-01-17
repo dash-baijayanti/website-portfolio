@@ -10,7 +10,7 @@ Welcome to my portfolio website! This is a showcase of my journey as a full-stac
 - **Projects**: Explore the projects I've worked on, complete with live demos and GitHub repositories.
 - **Skills**: A detailed list of my technical skills, tools, and technologies I’m proficient in.
 - **Blog/Articles**: Insights, challenges, and lessons learned while navigating my career transition into tech.
-**`https://www.canva.com/design/DAGcQgt2eqE/1a8hq30_CbukCAcoQn3tKg/view?utm_content=DAGcQgt2eqE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h50e402277a#1`**               
+Blog: [https://www.canva.com/design/DAGcQgt2eqE/1a8hq30_CbukCAcoQn3tKg/view?utm_content=DAGcQgt2eqE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h50e402277a#1]               
 - **Contact Me**: An easy way to reach out for collaborations, job opportunities, or networking.
 
 ---
@@ -67,15 +67,8 @@ Use the Contact Me form to get in touch.
 
 Feel free to reach out if you're interested in collaborating or just want to connect!
 
-``` 
 Email: [dash.baijayanti@gmail.com]
-```
-```
 LinkedIn: [https://www.linkedin.com/in/baijayanti-dash/]
-```
-
-```
 GitHub: [https://github.com/dash-baijayanti]
-```
 
  
