@@ -1,6 +1,7 @@
 ## My Portfolio Website 🌟
 
 Welcome to my portfolio website! This is a showcase of my journey as a full-stack developer, highlighting my skills, projects, and creativity. As a mother of three, this website also reflects my determination to grow and thrive in the tech industry while balancing my personal and professional life.
+<img src="screen/portfolio/home.png" alt="home - Offline Mode" width="500" height="300">
 
 ---
 
@@ -18,7 +19,7 @@ Welcome to my portfolio website! This is a showcase of my journey as a full-stac
 - **Blog/Articles**: Insights, challenges, and lessons learned while navigating my career transition into tech.
 Blog: 
 **[https://www.canva.com/design/DAGcQgt2eqE/1a8hq30_CbukCAcoQn3tKg/view?utm_content=DAGcQgt2eqE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h50e402277a#1]** 
-- 
+
 **[https://www.canva.com/design/DAGZKnGaqf8/IZoxc_ua9LF3ji53hrUUng/view?utm_content=DAGZKnGaqf8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha794c08ba3]**  
 
 - **Contact Me**: An easy way to reach out for collaborations, job opportunities, or networking.
