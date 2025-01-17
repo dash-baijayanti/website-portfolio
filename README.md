@@ -7,11 +7,21 @@ Welcome to my portfolio website! This is a showcase of my journey as a full-stac
 ## 🌟 Key Features
 
 - **About Me**: Learn more about my background, journey into tech, and what drives me as a developer.
+<img src="screen/portfolio/about.png" alt="about - Offline Mode" width="500" height="300">
+
 - **Projects**: Explore the projects I've worked on, complete with live demos and GitHub repositories.
+<img src="screen/portfolio/work.png" alt="work - Offline Mode" width="500" height="300">
+
 - **Skills**: A detailed list of my technical skills, tools, and technologies I’m proficient in.
+<img src="screen/portfolio/tech.png" alt="tech - Offline Mode" width="500" height="300">
+
 - **Blog/Articles**: Insights, challenges, and lessons learned while navigating my career transition into tech.
-Blog: [https://www.canva.com/design/DAGcQgt2eqE/1a8hq30_CbukCAcoQn3tKg/view?utm_content=DAGcQgt2eqE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h50e402277a#1]               
+Blog: 
+**[https://www.canva.com/design/DAGcQgt2eqE/1a8hq30_CbukCAcoQn3tKg/view?utm_content=DAGcQgt2eqE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h50e402277a#1]** 
+**[https://www.canva.com/design/DAGZKnGaqf8/IZoxc_ua9LF3ji53hrUUng/view?utm_content=DAGZKnGaqf8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha794c08ba3]**  
+
 - **Contact Me**: An easy way to reach out for collaborations, job opportunities, or networking.
+<img src="screen/portfolio/contact.png" alt="contact - Offline Mode" width="500" height="300">
 
 ---
 
