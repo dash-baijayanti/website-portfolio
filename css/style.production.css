@@ -20,12 +20,13 @@
   font-style: normal;
 }
 header{
-  left: 0%;
+  left: 0;
   width: 100%;
+  margin: 0;
 }
 body{
-  left:0px;
-  margin-left: 0%;
+  left:0;
+  margin:0;
 }
 
 
@@ -40,11 +41,11 @@ body{
   /* padding: 20px; */
   /* border-top: 4px solid rgb(128, 200, 241); Add a top border */
   /* border-left: 4px solid rgb(128, 200, 241); Add a left border */
-  -webkit-box-shadow: 2px 12px 12px rgba(128, 200, 241, 0.5); /* Add shadow */
-  box-shadow: 2px 12px 12px rgba(128, 200, 241, 0.5); /* Add shadow */
+  /* -webkit-box-shadow: 2px 6px 2px rgba(128, 200, 241, 0.5); /* Add shadow 
+  box-shadow: 2px 6px 2px rgba(128, 200, 241, 0.5); Add shadow */
   position: static;
-  left: 0px;
-  margin-left: 0%;
+  left: 0;
+  margin: 0;
 
 }
 
@@ -314,7 +315,7 @@ body{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   width: 100%;
   font-family: "Playfair Display", serif;
@@ -322,17 +323,13 @@ body{
   font-size: larger;
   margin-left: 0px;
   padding: 10px;
-  box-shadow: 2px -8px 12px rgb(128, 200, 241);
-  border-top: 2px  solid rgb(128, 200, 241); /* Add a top border */
-  /* -webkit-box-shadow: 12px 12px 18px rgb(128, 200, 241);
-  box-shadow: 2px 12px 12px 8px rgb(128, 200, 241);
-  border:15px rgb(128, 200, 241); */
+  /* -webkit-box-shadow: 2px -6px 2px rgba(128, 200, 241, 0.5); /* Add shadow */
+  /* box-shadow: 2px -6px 2px rgba(128, 200, 241, 0.5); */ 
 }
 .ms{
   position: fixed;
  bottom:0px;
  width: 100%;
- padding: 10px;
 }
 
 .profile_name {
@@ -1042,9 +1039,9 @@ svg * {
     }
     body
 {
-  width: 95%; 
+  width: 100%; 
   height:100%;
-  margin:0em 5%;
+  margin:0;
   background-color:#8ec1da;
   background-image: url("http://vollnixx.files.wordpress.com/2013/12/clouds_real.jpg");
   background-position: center bottom;
